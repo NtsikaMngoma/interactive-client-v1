@@ -15,7 +15,7 @@
                         <form name="contactForm" id='contact_form' method="post" action='email.php'>
                             <div class="col-md-6">
                                 <div class="field-set">
-                                    <input type='text' name='name' id='name' class="form-control" placeholder="Enter Account Number">
+                                    <input type='text' name='account' id='name' class="form-control" placeholder="Enter Account Number">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>

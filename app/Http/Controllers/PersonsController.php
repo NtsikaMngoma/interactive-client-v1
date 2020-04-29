@@ -77,22 +77,28 @@ class PersonsController extends Controller
     }
 
     /**
-     * @param PersonsModel $personsModel
-     * @param Request $request
      * @return Application|Factory|View
      */
-    public function createPerson(PersonsModel $personsModel, Request $request){
-        $createPerson = Http::post($this->siteConfigUrl, [
-            $personsModel->firstName => $request->input('first_name'),
-            $personsModel->surname => $request->input('surname'),
-            $personsModel->idNumber => $request->input('id_number')
-        ]);
-
+    public function createPerson(){
 //        dd($createPerson);
-        return view('persons.create', ['createPerson' => $createPerson]);
+        return view('persons.create');
     }
 
 //    public function removePerson(Request $request){
 //        $removePerson = Http::delete($this->siteConfigUrl . $this->persons);
 //    }
+
+    /**
+     * @param Request $request
+     * @return Application|Factory|View
+     */
+    public function requestPerson(Request $request){
+        $clientRequest = Http::post($this->siteConfigUrl . $this->persons->getEndpoint(), [
+            'name' => $request->input('name'),
+            'surname' => $request->input('surname'),
+            'id_number' => $request->input('id_number')
+        ]);
+        return view('persons.success', [ 'clientRequest' => $clientRequest ]);
+    }
+
 }

@@ -48,4 +48,17 @@ class TransactionsController extends Controller
         ]);
         return view('transactions.create', ['create' => $create]);
     }
+
+    /**
+     * @param Request $request
+     * @return Application|Factory|View
+     */
+    public function requestPerson(Request $request){
+        $clientRequest = Http::post($this->siteConfigUrl . $this->transactions->getEndpoint(), [
+            'name' => $request->input('name'),
+            'surname' => $request->input('surname'),
+            'id_number' => $request->input('id_number')
+        ]);
+        return view('transactions.success', [ 'clientRequest' => $clientRequest ]);
+    }
 }

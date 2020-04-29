@@ -12,25 +12,25 @@
 
                 <div class="col-md-8 col-md-offset-2 wow fadeInUp">
                     <div class="row">
-                        <form name="contactForm" id='contact_form' method="post" action=''>
-                            {{csrf_token()}}
+                        <form name="contactForm" id='contact_form' method="post" action={{route('person.request')}}>
+                            @csrf
                             <div class="col-md-12">
                                 <div class="field-set">
-                                    <input type='text' name='name' id='name' class="form-control" placeholder="Enter Id Number">
+                                    <input type='text' name='id_number' id='id_number' class="form-control" placeholder="Enter Id Number">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="field-set">
-                                    <input type='text' name='phone' id='phone' class="form-control" placeholder="Enter First Name">
+                                    <input type='text' name='name' id='name' class="form-control" placeholder="Enter First Name">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="field-set">
-                                    <input type='text' name='phone' id='phone' class="form-control" placeholder="Enter Surname">
+                                    <input type='text' name='surname' id='surname' class="form-control" placeholder="Enter Surname">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>

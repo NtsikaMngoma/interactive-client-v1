@@ -6,6 +6,7 @@ use App\Helpers\AccountsConf;
 use App\Models\AccountsModel;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
+use Illuminate\Http\Client\Response;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Http;
@@ -62,12 +63,21 @@ class AccountsController extends Controller
         ]);
     }
 
-    public function createAccount(AccountsModel $accountsModel, Request $request) {
-
-        $create = Http::post($this->siteConfigUrl, [
-            $accountsModel->accountNumber => $request->input('amount'),
-            $accountsModel->outstandingBalance => $request->input('outstanding_balance')
-        ]);
-        return view('accounts.create', ['create' => $create]);
+    public function createAccount() {
+        return view('accounts.create');
     }
+
+    /**
+     * @param Request $request
+     * @return Application|Factory|View
+     */
+    public function storeAccount(Request $request) {
+        $clientRequest = Http::post($this->siteConfigUrl . $this->accounts->getEndpoint(), [
+            'amount' => $request->input('amount'),
+            'outstanding_balance' => $request->input('outstanding_balance')
+        ]);
+
+        return view('accounts.success', [ 'clientRequest' => $clientRequest ]);
+    }
+
 }

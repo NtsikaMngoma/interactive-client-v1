@@ -27,6 +27,13 @@ Route::get('/persons', [$personController, 'index'])->name('persons.find');
 Route::get('/persons/create', [$personController, 'createPerson'])->name('persons.create');
 
 /**
+ *
+ *  Create
+ */
+Route::post('/person-create', [$personController, 'requestPerson'])->name('person.request');
+
+
+/**
  * -- Accounts Routing
  *
  */
@@ -34,6 +41,12 @@ $accountsController = Controllers\AccountsController::class;
 
 Route::get('/accounts', [$accountsController, 'index'])->name('accounts.find');
 Route::get('/accounts/create', [$accountsController, 'createAccount'])->name('account.create');
+
+/**
+ *
+ *  Create
+ */
+Route::post('/account-create', [$accountsController, 'storeAccount'])->name('account.store');
 
 /**
  * -- Transactions Controller

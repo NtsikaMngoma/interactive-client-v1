@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class AccountsModel extends Model
 {
     public $accountNumber = 'account_number';
-    public $outstandingBalance = 'outstanding_balance';
+    public $outstandingBalance;
     /**
      * @return mixed
      */

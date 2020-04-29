@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ba20f3a-60c3-4165-af88-2075f4c62519" name="Default Changelist" comment="" />
+    <list default="true" id="5ba20f3a-60c3-4165-af88-2075f4c62519" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/persons/success.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AccountsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AccountsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PersonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PersonsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TransactionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TransactionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AccountsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AccountsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/PersonsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/PersonsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TransactionsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TransactionsModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/accounts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/accounts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/persons/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/persons/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/transactions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/transactions/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +27,9 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" xdebug_debug_port="9004" />
   <component name="PhpServers">
@@ -116,9 +134,13 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/spatie/laravel-view-models" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
   <component name="ProjectId" id="1a1evLcr1Njofmz2rbbzHupQ64a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -127,7 +149,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/transactions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/accounts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -138,13 +160,14 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Bitnami\nginxstack-1.16.1-4\nginx\html\interactive-client-v1\resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\markm\OneDrive\Documents\interactive-client-v1\resources\views\accounts" />
       <recent name="C:\Users\markm\OneDrive\Documents\interactive-client-v1\resources\views\transactions" />
       <recent name="C:\Users\markm\OneDrive\Documents\interactive-client-v1\resources\views\persons" />
       <recent name="C:\Bitnami\nginxstack-1.16.1-4\nginx\html\interactive-client-v1\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Bitnami\nginxstack-1.16.1-4\nginx\html\interactive-client-v1\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -182,7 +205,7 @@
       <workItem from="1588065319076" duration="162000" />
       <workItem from="1588065597184" duration="10807000" />
       <workItem from="1588076922895" duration="10766000" />
-      <workItem from="1588099161433" duration="5141000" />
+      <workItem from="1588099161433" duration="20520000" />
     </task>
     <servers />
   </component>
@@ -219,6 +242,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1587993519834" />
+    <state x="725" y="342" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588178799011">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="725" y="342" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1588178799011" />
     <state x="740" y="246" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1586033944232">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -227,10 +254,11 @@
       <screen x="-1360" y="0" width="1360" height="768" />
     </state>
     <state x="-832" y="159" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588085879632" />
-    <state x="-950" y="140" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588090937904">
-      <screen x="-1360" y="0" width="1360" height="768" />
+    <state x="579" y="197" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1588178200021">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="-950" y="140" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588090937904" />
+    <state x="579" y="197" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588178200021" />
     <state x="736" y="454" key="ComposerInitDialogKey" timestamp="1586300090246">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -244,6 +272,14 @@
     </state>
     <state x="-900" y="140" key="FileChooserDialogImpl/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588105487389" />
     <state x="649" y="197" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1588013430860" />
+    <state x="812" y="438" width="295" height="292" key="Github.ShareDialog" timestamp="1588107894039">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="812" y="438" width="295" height="292" key="Github.ShareDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588107894039" />
+    <state x="684" y="245" key="Github.UntrackedFilesDialog" timestamp="1588107919119">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="684" y="245" key="Github.UntrackedFilesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1588107919119" />
     <state width="1877" height="300" key="GridCell.Tab.0.bottom" timestamp="1586351589341">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -288,10 +324,10 @@
       <screen x="-1360" y="0" width="1360" height="768" />
     </state>
     <state x="-846" y="308" key="NewPhpFileDialog/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588066271725" />
-    <state x="461" y="183" key="SettingsEditor" timestamp="1587991897667">
+    <state x="461" y="183" key="SettingsEditor" timestamp="1588178893279">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="461" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1587991897667" />
+    <state x="461" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1588178893279" />
     <state x="656" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1586704653120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -325,10 +361,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="375" y="0" width="946" height="754" maximized="true" key="dock-window-3/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588087640300" />
-    <state x="-957" y="155" key="refactoring.ChangeSignatureDialog" timestamp="1588088152347">
+    <state x="667" y="275" width="585" height="530" key="find.popup" timestamp="1588114010684">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="667" y="275" width="585" height="530" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1588114010684" />
+    <state x="-957" y="155" key="refactoring.ChangeSignatureDialog" timestamp="1588160882562">
       <screen x="-1360" y="0" width="1360" height="768" />
     </state>
-    <state x="-957" y="155" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588088152347" />
+    <state x="-957" y="155" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/-1360.0.1360.768@-1360.0.1360.768" timestamp="1588160882562" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1585946220672">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

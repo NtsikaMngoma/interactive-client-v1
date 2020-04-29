@@ -12,17 +12,18 @@
 
                 <div class="col-md-8 col-md-offset-2 wow fadeInUp">
                     <div class="row">
-                        <form name="contactForm" id='contact_form' method="post" action='email.php'>
+                        <form name="contactForm" id='contact_form' method="post" action="{{route('account.store')}}">
+                            @csrf
                             <div class="col-md-6">
                                 <div class="field-set">
-                                    <input type='text' name='name' id='name' class="form-control" placeholder="Enter Account Number">
+                                    <input type='text' name='account_number' id='account_number' class="form-control" placeholder="Enter Account Number">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
                                 <div class="field-set">
-                                    <input type='text' name='phone' id='phone' class="form-control" placeholder="Enter Outstanding Balance">
+                                    <input type='number' name='outstanding_balance' id='outstanding_balance' class="form-control" placeholder="Enter Outstanding Balance">
                                     <div class="line-fx"></div>
                                 </div>
                             </div>
